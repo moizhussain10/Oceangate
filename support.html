@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Desks | OceanGate</title>
+    <style>
+        :root {
+            --bg-main: #f8fafc; --bg-card: #ffffff;
+            --accent-green: #10b981; --text-main: #0f172a;
+            --text-muted: #475569; --border-line: #cbd5e1;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace; }
+        body { background-color: var(--bg-main); color: var(--text-main); }
+        
+        header { background-color: var(--bg-card); border-bottom: 2px solid var(--text-main); padding: 1.2rem 2rem; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .brand-logo { font-size: 1.4rem; font-weight: bold; letter-spacing: 2px; color: var(--text-main); }
+        .brand-logo span { color: var(--accent-green); }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; }
+        .nav-links a:hover, .nav-links a.active { color: var(--text-main); border-bottom: 2px solid var(--accent-green); }
+
+        .container { max-width: 1100px; margin: 4rem auto; padding: 0 2rem; }
+        h2 { font-size: 2rem; margin-bottom: 1rem; font-family: system-ui, sans-serif; font-weight: 800; }
+        h2 span { color: var(--accent-green); }
+        .desc { color: var(--text-muted); margin-bottom: 3rem; font-size: 0.95rem; max-width: 700px; }
+
+        .support-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .hub-node { background: var(--bg-card); border: 1px solid var(--border-line); padding: 2rem; border-radius: 4px; }
+        .hub-node h3 { color: var(--text-main); font-size: 1.1rem; margin-bottom: 1rem; border-bottom: 2px solid var(--text-main); padding-bottom: 0.5rem; font-weight: bold; }
+        .hub-node p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 0.8rem; }
+        .status-pulse { display: inline-block; width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%; margin-right: 0.5rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="brand-logo">OCEANGATE<span>_SYS</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html" class="active">Support</a></li>
+                <li><a href="buy.html">Where To Buy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Direct Technical <span>Hotlines & Service Centers</span></h2>
+        <p class="desc">Bypass congested central telecommunication lines. Route questions directly to regional hardware maintenance nodes for immediate engineer dispatch.</p>
+
+        <div class="support-grid">
+            <div class="hub-node">
+                <h3>CORE DIAGNOSTIC CELL (ASIA)</h3>
+                <p><strong>Location:</strong> Corporate Technical Hub, Sector 4-B, Industrial Estate Area, Karachi, Pakistan.</p>
+                <p><strong>Hotline Vector:</strong> +92-21-39900221</p>
+                <p style="margin-top: 1.5rem; font-size: 0.8rem; font-weight: bold;"><span class="status-pulse"></span>CELL SECURELY ACTIVE / 24-7</p>
+            </div>
+            <div class="hub-node">
+                <h3>REGIONAL ROUTING PORTAL</h3>
+                <p><strong>Channel:</strong> Direct Terminal Support Framework</p>
+                <p><strong>Fax Receiver:</strong> +92-21-39900222</p>
+                <p style="margin-top: 1.5rem; font-size: 0.8rem; font-weight: bold;"><span class="status-pulse"></span>ENGINEERS ON STANDBY</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
